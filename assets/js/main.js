@@ -168,8 +168,8 @@
         items: 3
       },
       900: {
-        items: 4
-      }
+        items: 3
+      },
       1000: {
         items: 6
       }
