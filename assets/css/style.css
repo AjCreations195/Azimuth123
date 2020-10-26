@@ -551,7 +551,7 @@ background: #cec4c4;
 @media (min-width: 544px) {
   
   .slideresponse{
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
 }
 
@@ -559,7 +559,7 @@ background: #cec4c4;
 @media (max-width: 544px) {
   
   .slideresponse{
-    font-size: 14px !important;
+    font-size: 13px !important;
   }
 }
 
