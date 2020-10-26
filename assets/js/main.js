@@ -157,10 +157,11 @@
     autoplay: true,
     dots: true,
     loop: true,
+    items : 6,
+itemsDesktop : [1199,4],
+itemsDesktopSmall : [979,2],
     responsive: {
-      0: {
-        items: 2
-      },
+     
       544: {
         items: 2
       },
@@ -168,10 +169,7 @@
         items: 3
       },
       900: {
-        items: 3
-      },
-      1000: {
-        items: 6
+        items: 4
       }
     }
   });
