@@ -19,16 +19,20 @@
 <script type="text/javascript">
 
 
+	
 	function sendEmail() {
-		
-		var  email = document.getElementById("email").value
-		var message = document.getElementById("message").value
+    var emailsender = document.getElementById("email").value
+    var messagesender = document.getElementById("message").value 
+   var namesender= document.getElementById("name").value
+   var subjectsender= document.getElementById("subject").value
+	
 		Email.send({
-			SecureToken: "cffe6c48-857e-4489-8bf9-af6fde7d2626",
-			To: 'tradingazimuth@gmail.com',
+			SecureToken: "425edcc9-0c40-402d-a40e-eb35c3d09e3f",
+			To: 'syedthjafna@gmail.com',
 			From: "ajcreations146@gmail.com",
-			Subject: email,
-			Body: message
+      Subject: emailsender,
+      Body: "Name:"+ namesender + "<br> Subject:" +subjectsender +"<br> Message : " + messagesender
+      
 
 		}).then(
 			message => alert(message)
@@ -197,7 +201,7 @@
           </div>
           <div class="form-group">
             <label for="name">Message</label>
-            <textarea class="form-control" name="message" rows="5" data-rule="required" placeholder="Please Enter Your Messages and Feedback Here" data-msg="Please write something for us"></textarea>
+            <textarea class="form-control" id="message" name="message" rows="5" data-rule="required" placeholder="Please Enter Your Messages and Feedback Here" data-msg="Please write something for us"></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
@@ -205,7 +209,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button value="Send Email" onclick="sendEmail()" type="submit">Send Message</button></div>
+          <div class="text-center"><input  style="font-size: 18px;font-weight: 400; color: rgb(255, 255, 255); background: #71b649dc; border: none" type="button" value="Send Message" onclick="sendEmail()" ></div>
         </form>
       </div>
 
